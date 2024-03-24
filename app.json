@@ -1,0 +1,42 @@
+{
+  "name": "LostChatBot",
+  "description": "An Advanced AI ChatBot written in python based on Mongo Database.",
+  "logo": "",
+  "keywords": [
+    "ChatBot",
+    "mongodb",
+    "python",
+    "pyrogram"
+  ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+  "repository": "https://github.com/LostVenom/LostChatBot",
+  "env": {
+    "API_ID": {
+      "description": "Fill API ID.",
+      "required": true,
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Fill API Hash",
+      "required": true,
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Fill Bot Token",
+      "required": true,
+      "value": ""
+    },
+    "MONGO_URL": {
+      "description": "Fill Your Database URL",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Fill the numerical id of Owner",
+      "required": true,
+      "value": ""
+    }
+  }
+}
