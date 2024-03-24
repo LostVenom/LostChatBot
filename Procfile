@@ -1,1 +1,1 @@
-worker: python -m LostChatBot
+worker: python3 -m LostChatBot
