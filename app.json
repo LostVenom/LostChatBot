@@ -16,27 +16,27 @@
     "API_ID": {
       "description": "Fill API ID.",
       "required": true,
-      "value": ""
+      "value": "24133469"
     },
     "API_HASH": {
       "description": "Fill API Hash",
       "required": true,
-      "value": ""
+      "value": "66ba01653d5077ea870fac575ba978b"
     },
     "BOT_TOKEN": {
       "description": "Fill Bot Token",
       "required": true,
-      "value": ""
+      "value": "6429184470:AAGx6DvDpO6wbFYHQFDKnj-F0jqbdS_BAV4"
     },
     "MONGO_URL": {
       "description": "Fill Your Database URL",
       "required": true,
-      "value": ""
+      "value": "mongodb+srv://Venom:LostVenom@venom.bopprqu.mongodb.net/?retryWrites=true&w=majority&appName=Venom"
     },
     "OWNER_ID": {
       "description": "Fill the numerical id of Owner",
       "required": true,
-      "value": ""
+      "value": "1215104805"
     }
   }
 }
