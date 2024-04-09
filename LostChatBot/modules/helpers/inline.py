@@ -6,29 +6,26 @@ from LostChatBot import VenomBot
 
 DEV_OP = [
     [
-        InlineKeyboardButton(text="🥀 ᴏᴡɴᴇʀ 🥀", user_id=OWNER),
-        InlineKeyboardButton(text="✨ ꜱᴜᴘᴘᴏʀᴛ ✨", url=f"https://t.me/{SUPPORT_GRP}"),
+        InlineKeyboardButton(text="👻 ᴅᴇᴠᴇʟᴏᴘᴇʀ 👻", user_id=OWNER),
+        InlineKeyboardButton(text="🏴‍☠ ɴᴇᴛᴡᴏʀᴋ 🏴‍☠", url=f"https://t.me/TitanNetwrk"),
     ],
     [
         InlineKeyboardButton(
-            text="🧸 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🧸",
-            url=f"https://t.me/{MickeyBot.username}?startgroup=true",
+            text="👻 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ 👻",
+            url=f"https://t.me/{VenomBot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="🚀 ʜᴇʟᴘ & ᴄᴍᴅs 🚀", callback_data="HELP"),
-    ],
-    [
-        InlineKeyboardButton(text="❄️ sᴏᴜʀᴄᴇ ❄️", callback_data="SOURCE"),
-        InlineKeyboardButton(text="☁️ ᴀʙᴏᴜᴛ ☁️", callback_data="ABOUT"),
+         InlineKeyboardButton(text="🕷 ᴀʙᴏᴜᴛ 🕷", callback_data="ABOUT"),
+        InlineKeyboardButton(text="🛠 ᴄᴏᴍᴍᴀɴᴅs 🛠", callback_data="HELP"),
     ],
 ]
 
 PNG_BTN = [
     [
         InlineKeyboardButton(
-            text="🧸 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🧸",
-            url=f"https://t.me/{MickeyBot.username}?startgroup=true",
+            text="👻 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ᴄʜᴀᴛ 👻",
+            url=f"https://t.me/{VenomBot.username}?startgroup=true",
         ),
     ],
     [
@@ -50,7 +47,7 @@ BACK = [
 HELP_BTN = [
     [
         InlineKeyboardButton(text="🐳 ᴄʜᴀᴛʙᴏᴛ 🐳", callback_data="CHATBOT_CMD"),
-        InlineKeyboardButton(text="🎄 ᴛᴏᴏʟs 🎄", callback_data="TOOLS_DATA"),
+        InlineKeyboardButton(text="🛠 ᴛᴏᴏʟs 🛠 ᴄᴏᴍᴍᴀɴᴅs 🛠", callback_data="TOOLS_DATA"),
     ],
     [
         InlineKeyboardButton(text="✨ ʙᴀᴄᴋ ✨", callback_data="BACK"),
