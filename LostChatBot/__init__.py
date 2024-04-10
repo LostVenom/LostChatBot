@@ -22,7 +22,7 @@ mongo = MongoCli(config.MONGO_URL)
 db = mongo.Anonymous
 OWNER = config.OWNER_ID
 
-class MickeyBot(Client):
+class VenomBot(Client):
     def __init__(self):
         super().__init__(
             name="LostChatBot",
@@ -45,4 +45,4 @@ class MickeyBot(Client):
         await super().stop()
 
 
-LostChatBot = LostChatBot()
+VenomBot = VenomBot()
