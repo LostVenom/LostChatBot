@@ -40,8 +40,8 @@ async def chatbot_text(client: Client, message: Message):
     chatai = chatdb["Word"]["WordDb"]
 
     if not message.reply_to_message:
-        LostChatBot = MongoClient(MONGO_URL)
-        LostBot = LostChatBot["LostChatBot"]["LostBot"]
+        lostdb = MongoClient(MONGO_URL)
+        lost = lostdb["LostDb"]["Lost"]
         is_LostBot = LostBot.find_one({"chat_id": message.chat.id})
         if not is_LostBot:
             await client.send_chat_action(message.chat.id, ChatAction.TYPING)
@@ -60,8 +60,8 @@ async def chatbot_text(client: Client, message: Message):
                     await message.reply_text(f"{hey}")
 
     if message.reply_to_message:
-        LostChatBot = MongoClient(MONGO_URL)
-        LostBot = LostChatBot["LostChatBot"]["LostBot"]
+        lostdb = MongoClient(MONGO_URL)
+        lost = lostdb["LostDb"]["Lost"]
         is_LostBot = LostBot.find_one({"chat_id": message.chat.id})
         if message.reply_to_message.from_user.id == client.id:
             if not is_LostBot:
@@ -129,8 +129,8 @@ async def chatbot_sticker(client: Client, message: Message):
     chatai = chatdb["Word"]["WordDb"]
 
     if not message.reply_to_message:
-        LostChatBot = MongoClient(MONGO_URL)
-        LostBot = LostChatBot["LostChatBot"]["LostBot"]
+        lostdb = MongoClient(MONGO_URL)
+        lost = lostdb["LostDb"]["Lost"]
         is_LostBot = LostBot.find_one({"chat_id": message.chat.id})
         if not is_LostBot:
             await client.send_chat_action(message.chat.id, ChatAction.TYPING)
@@ -149,8 +149,8 @@ async def chatbot_sticker(client: Client, message: Message):
                     await message.reply_sticker(f"{hey}")
 
     if message.reply_to_message:
-        LostChatBot = MongoClient(MONGO_URL)
-        LostBot = LostChatBot["LostChatBot"]["LostBot"]
+        lostdb = MongoClient(MONGO_URL)
+        lost = lostdb["LostDb"]["Lost"]
         is_LostBot = LostBot.find_one({"chat_id": message.chat.id})
         if message.reply_to_message.from_user.id == Client.id:
             if not is_LostBot:
