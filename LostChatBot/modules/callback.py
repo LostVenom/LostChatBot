@@ -2,7 +2,7 @@ from pyrogram.enums import ChatMemberStatus as CMS
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
 
 from LostChatBot import VenomBot
-from LostChatBot.database import LostBot
+from LostChatBot.database import Lost
 from LostChatBot.modules.helpers import (
     ABOUT_BTN,
     ABOUT_READ,
